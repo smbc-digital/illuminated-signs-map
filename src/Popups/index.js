@@ -1,11 +1,11 @@
 import { getTargetUrl } from '../Helpers'
 
 const signActivePopup = feature => {
-  const varName = getTargetUrl()
+  //const varName = getTargetUrl()
 
   return `<div class="item"><i class="tag fa fa-map-marker"></i><p class="title">Location </p><p class="info">${feature.properties.location_description}</p></div><hr/>
   <div class="item"><i class="tag fa fa-tag"></i><p class="title">Sign ID </p><p class="info">${feature.properties.feature_id}</p></div>
-  <a class="button-primary" href="${varName}/lit-sign-bollard/report-an-issue/lit-sign/fault-type?assetId=${feature.properties.central_asset_id}&siteCode=${feature.properties.site_code}">Report this sign</a>`
+  <a class="button-primary" href="report-an-issue/lit-sign/fault-type?assetId=${feature.properties.central_asset_id}&siteCode=${feature.properties.site_code}">Report this sign</a>`
 }
 
 const signFaultPopup = feature => {
