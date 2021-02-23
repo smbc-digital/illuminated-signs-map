@@ -15,19 +15,19 @@ const generateTargetUrl = () => {
     }
     else if (window.location.hostname.includes('int'))
     {
-        return  'int-dts.smbcdigital.net'
+        return  'https://int-dts.smbcdigital.net'
     }
     else if (window.location.hostname.includes('qa'))
     {
-        return  'qa-dts.smbcdigital.net'
+        return  'https://qa-dts.smbcdigital.net'
     }
     else if (window.location.hostname.includes('staging'))
     {
-        return  'stage-dts.smbcdigital.net'
+        return  'https://stage-dts.smbcdigital.net'
     }
     else if (window.location.hostname.includes('prod'))
     {
-        return  'myaccount.stockport.gov.uk'
+        return  'https://myaccount.stockport.gov.uk'
     }
 }
 
